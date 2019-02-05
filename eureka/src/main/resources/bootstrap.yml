@@ -10,9 +10,9 @@ eureka:
     hostname: ${EUREKA_HOME_NAME:localhost}
     appname: ${spring.application.name}
   client:
-    register-with-eureka: ${BOOL_REGISTER:false}
-    fetch-registry: ${BOOL_FETCH:false}
+    register-with-eureka: ${EUREKA_BOOL_REGISTER:false}
+    fetch-registry: ${EUREKA_BOOL_FETCH:false}
     service-url:
-      defaultZone: ${EUREKA_URL_LIST:http://${eureka.instance.hostname}:${server.port}/eureka}
+      defaultZone: ${EUREKA_REG_LIST:http://${eureka.instance.hostname}:${server.port}/eureka}
   server:
-    enable-self-preservation: ${SELF_PRESERVATION:true}
+    enable-self-preservation: ${EUREKA_SELF_PRESERVATION:true}
