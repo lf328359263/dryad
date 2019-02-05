@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: ${ADMIN_APPLICATION_NAME:discovery}
+    name: ${ADMIN_APPLICATION_NAME:admin}
 
 eureka:
   client:
