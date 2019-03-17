@@ -22,6 +22,9 @@
     <modules>
         <module>eureka</module>
         <module>admin</module>
+        <module>config</module>
+        <module>gateway</module>
+        <module>store</module>
     </modules>
 
     <properties>

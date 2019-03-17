@@ -1,0 +1,11 @@
+server:
+  port: ${GATEWAY_PORT:8445}
+
+spring:
+  application:
+    name: ${GATEWAY_APPLICATION_NAME:gateway}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL_LIST:http://localhost:8761/eureka}

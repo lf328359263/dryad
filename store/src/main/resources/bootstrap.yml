@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${STORE_APPLICATION_NAME:store}
+server:
+  port: ${STORE_PORT:2101}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL_LIST:http://localhost:8761/eureka}
+
